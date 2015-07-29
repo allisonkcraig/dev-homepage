@@ -16,31 +16,46 @@ body {
 }
 
 #box1{
-	background-color: #D3D4C4;
-	opacity: 0.5;
+	background-color: #EEAA88;
 
 }
 
 #box2{
 	background-color: #B3CBBD;
 	overflow: hidden;
-	opacity: 0.5;
-	background-image: url("http://th08.deviantart.net/fs70/PRE/i/2012/271/b/a/stock___watercolor_3_by_mayshing-d5g5nwm.jpg");
+	background-image: url("warm-tone-watercolor.jpg");
 	background-attachment: fixed;
 	background-size: cover;
-	position: relative;
 }
 
 #box3{
-	background-color: #B9C1B2;
-	opacity: 0.5;
+	background-color: #EEDD99;
+}
+
+
+#box4{
+	background-color: #B3CBBD;
+	overflow: hidden;
+	background-image: url("header-image.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#box5{
+	background-color: #EEDD99;
+}
+
+#box6{
+	background-color: #CCC68D;
+	height: 100px;
 }
 .header-box {
 	position: relative; /* anchor for paralax*/
 	height:300px;
 	background-image: url("header-image.jpg");
 	background-attachment: fixed;
-	background-size: cover;
+	background-size: 125%;
+	background-position; 
 	overflow: hidden;
 
 }
@@ -50,14 +65,14 @@ body {
 	margin: 0 auto;
 	position: absolute;
 	text-align: center;
-	margin-top: 100px;
+	margin-top:75px;
 	width: 100%;
 	font-family: 'Pacifico', cursive;
 }
 
-#daisy {
-	position: fixed;  
-	width: 100%;
-	float: center;
-	display: inline-block;
+#geo-lace {
+	width: cover;
+	float: top;
+	margin-top: -60%;
+	
 }
