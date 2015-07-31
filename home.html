@@ -11,8 +11,7 @@
 	<header class="header-box">
 		<center>
 			<div class="logo">
-				<h1>Allison Craig<h1>
-				<h1>Web Developer</h1>
+				<img id="logo-title" src="logo.png">
 				<img id="geo-lace" src="seikaiha_by_kanzume.png">
 			</div>
 		</center>
@@ -44,15 +43,15 @@
 <script type="text/javascript">
 $(window).scroll(function(){
 
-  var wScroll = $(this).scrollTop();
+  var windowScroll = $(this).scrollTop();
 
-
+ 	// Nameplace - Div 1
     $('.logo').css({
-      'transform' : 'translate(0px, '+ wScroll /8 +'%)'
+      'transform' : 'translate(0px, '+ windowScroll /8 +'%)'
     });
-
+    // Overlay - Div 1
     $('#geo-lace').css({
-      'transform' : 'translate(0px, '+ wScroll /4 +'%)'
+      'transform' : 'translate(0px, '+ windowScroll /4 +'%)'
     });
 
 
