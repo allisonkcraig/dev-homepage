@@ -38,17 +38,18 @@
 
 	<div class="general-div" id="box2">
 		<div id="box2-content">
-			<center><h1 id="box2-title">Current Stack</h1></center>
-			<center><h2 id="box2-elem1">Javascript</h2></center>
-			<center><h2 id="box2-elem2">Python</h2></center>
-			<center><h2 id="box2-elem3">Flask</h2></center>
-			<center><h2 id="box2-elem4">HTML & CSS</h2></center>
+			<h1 id="box2-title">Current Stack</h1>
+			<h2 id="box2-elem1">Javascript</h2>
+			<h2 id="box2-elem2">Python</h2>
+			<h2 id="box2-elem3">Flask</h2>
+			<h2 id="box2-elem4">HTML & CSS</h2>
 		</div>
 
 	</div>
 
 	<div class="general-div" id="box3">
-		<h1>DIV3</h1>
+		<h1>Current Projects</h1>
+		<h2>Check out my github!</h2>
 	</div>
 
 	<div class="general-div" id="box4">
@@ -95,34 +96,34 @@ $(window).scroll(function(){
 	};
 
 
-	if (windowScroll >= 800){
+	if (windowScroll >= 825){
 		$('#box2-title').css({
-      		'transform' : 'translate(-'+ windowScroll /40 +'%)'
+      		'transform' : 'translateX(-'+ windowScroll /60 +'%)'
     	});
-	}
+	} 
 
-	if (windowScroll >= 800){
+	if (windowScroll >= 850){
 		$('#box2-elem1').css({
-      		'transform' : 'translate(-'+ windowScroll /40 +'%)'
+      		'transform' : 'translate('+ windowScroll /60 +'%)'
     	});
 	}
 
-	if (windowScroll >= 800){
+	if (windowScroll >= 875){
 		$('#box2-elem2').css({
-      		'transform' : 'translate(-'+ windowScroll /40 +'%)'
+      		'transform' : 'translate(-'+ windowScroll /60 +'%)'
     	});
 	}
 
 
-	if (windowScroll >= 800){
+	if (windowScroll >= 900){
 		$('#box2-elem3').css({
-      		'transform' : 'translate(-'+ windowScroll /40 +'%)'
+      		'transform' : 'translate('+ windowScroll /60 +'%)'
     	});
 	}
 
-	if (windowScroll >= 800){
+	if (windowScroll >= 925){
 		$('#box2-elem4').css({
-      		'transform' : 'translate(-'+ windowScroll /40 +'%)'
+      		'transform' : 'translate(-'+ windowScroll /50 +'%)'
     	});
 	}
 
