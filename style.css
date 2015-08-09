@@ -1,7 +1,7 @@
 .general-div {
-	height: 400px;
-	background-color: green;
+	height: 500px;
 	margin: 0px;
+	padding-top: 50px;
 }
 
 .container-fluid {
@@ -20,90 +20,82 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+
+
+#fname {
+	font-size: 5em;
+}
+
 #box1 {
 	background-color: #E5B1B5;
 
 }
 
-#portrait {
-	padding-top: 50px;
-}
 
 #box1-content {
-	padding-top: 50px;
+	padding-top: 25px;
 }
 
 #box2 {
-	background-color: #B3CBBD;
 	overflow: hidden;
 	background-image: url("static/img/spoon-graphics-vector-2.jpeg");
 	background-attachment: fixed;
 	background-size: cover;
 	color: white;
-	padding-top: 50px;
 	text-align: center;
+	box-shadow: 1px 1px 3px gray;
 }
 
-#box2-title {
-
-}
-
-#box2-elem1 {
-
-}
-
-#box2-elem2 {
-
-}
-
-#box2-elem3 {
-
-}
-
-#box2-elem4 {
-
-}
 
 #box3 {
 	background-color: #E8F59B;
+
 }
 
 
 #box4 {
-	background-color: #B3CBBD;
 	overflow: hidden;
 	background-image: url("static/img/spoon-vector-graphics-3.jpeg");
 	background-attachment: fixed;
-	background-size: cover;
+	box-shadow: 1px 1px 3px gray;
 }
 
 #box5 {
-	background-color: #827376;
+	background-color: #F2F3D4;
 }
 
-.border {
-	background-color: #E5B1B5;
-	height: 100px;
+#box6 {
+	height: 50px;
+	overflow: hidden;
+	background-image: url("static/img/spoon-vector-graphics-3.jpeg");
+	background-attachment: fixed;
+	box-shadow: 1px 1px 3px gray;
 }
+
+
 .header-box {
 	position: relative; /* anchor for paralax*/
-	height:400px;
+	height:500px;
 	background-image: url("static/img/spoon-graphics-vector.jpeg");
 	background-attachment: fixed;
 	background-size: 100%;
 	background-position; 
 	overflow: hidden;
+	box-shadow: 1px 1px 3px gray;
 
 }
 
-.logo {
+#logo {
 	position: relative;
 	margin: 0 auto;
-	position: absolute;
 	text-align: center;
-	margin-top:75px;
 	width: 100%;
+	font-family: 'Codystar', cursive;
+	text-align: center;
+	padding-top: 150px;
+	text-shadow: 1px 1px #827376;
 }
+
 
 #geo-lace {
 	width: cover;

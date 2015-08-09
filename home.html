@@ -5,34 +5,33 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<link rel='stylesheet' href='style.css'>
+	<link href='http://fonts.googleapis.com/css?family=Codystar' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'></head>
 <body>
 	<div class='container-fluid'>
 
-	<div class="border">
-	</div>
-
 	<div class="row">
 	<header class="header-box">
-		<center>
-			<div class="logo">
-				<!-- <img id="logo-title" src="logo.png"> -->
-				<!-- <img id="geo-lace" src="seikaiha_by_kanzume.png"> -->
+			<div id="logo">
+				<h1 id="fname"><b>Allison K Craig</b></h1>
+				<h3>Software Engineer</h3>
 			</div>
-		</center>
+	
+				<!-- <img id="geo-lace" src="seikaiha_by_kanzume.png"> -->
 	</header>
 	</div>
 
 	<div class="row">
 		<div class="general-div " id="box1">
+			<div id="box1-content">
 			<div class="col-md-3 col-md-offset-1">
 				<img id="portrait" src="static/img/round-profile-pic.png">
 			</div>
-			<span class="col-md-5 col-md-offset-1" id="box1-content">
-				<center><h2> Allison K Craig</h2></center>
-				<center><h3><i>Software Engineer</i></h3></center>
+			<span class="col-md-5 col-md-offset-1">
+				<center><h3> About Allison</h3></center>
 				<center><p>Allison lives in San Francisco where she is a software engineer specializing in Javascript and Python. She was a HackBright Academy Fellow and attends many tech meet-ups in SF. In her spare time she plays ukulele in her band The Not Marys. She studied Fashion Design at FIDM: Fashion Institute of Design and Merchandising and continues to follow her passion for creating through coding.</p></center>
 			</span>
+		</div>
 		</div>
 	</div>
 
@@ -48,20 +47,30 @@
 	</div>
 
 	<div class="general-div" id="box3">
-		<h1>Current Projects</h1>
-		<h2>Check out my github!</h2>
+		<div id="box3-content">
+			<h1>Current Projects</h1>
+			<h2>Check out my github!</h2>
+			<h2>Check out my github!</h2>
+			<h2>Check out my github!</h2>
+		</div>
 	</div>
 
 	<div class="general-div" id="box4">
-		<h1>DIV4</h1>
+		<div id="box4-content">
+			<h1>DIV4</h1>
+		</div>
 	</div>
 
 	<div class="general-div" id="box5">
-		<h1>DIV5</h1>
+		<div id="box5-content">
+			<h1>DIV5</h1>
+		</div>
 	</div>
 
-	<div class="border">
-		<h1>DIV3</h1>
+	<div id="box6">
+		<div id="box6-content">
+			<h1>DIV6</h1>
+		</div>
 	</div>
 
 </div>
@@ -75,7 +84,7 @@ $(window).scroll(function(){
   	// console.log(h)
 
  	// Nameplace - Header
-    $('.logo').css({
+    $('#logo').css({
       'transform' : 'translate(0px, '+ windowScroll /8 +'%)'
     });
     // Overlay - Header
@@ -83,37 +92,32 @@ $(window).scroll(function(){
       'transform' : 'translate(0px, '+ windowScroll /4 +'%)'
     });
 
-    // Portrait - Div 1
-	if (windowScroll <= 75) {
-		$('#portrait').css({ 'opacity' : ( 0 + windowScroll )/20});
-	} else if (windowScroll > 400) {
-		
-		$('#portrait').css({ 'opacity' : ( 700 - windowScroll) /20 });
-	};
+
 	// Content - Div 1
-	if (windowScroll <= 200) {
-		$('#box1-content').css({ 'opacity' : ( 0 + windowScroll )/20});
-	} else if (windowScroll > 400) {
-		
-		$('#box1-content').css({ 'opacity' : ( 700 - windowScroll) / 20 });
-	};
+	if (windowScroll < 90) {
+		$('#box1-content').css({ 'opacity' : ( windowScroll /200) });
+	} else if (windowScroll > 650) {
+		$('#box1-content').css({ 'opacity' : 1 - ((windowScroll - 550) / 200)});
+	} else {
+		$('#box1-content').css({ 'opacity' : 1});
+	}
 
-
-	// if (windowScroll <= 600) {
-	// 	// div at bottom of page
-	// 	// $('#box2-content').css({ 'opacity' : ( 0 + windowScroll )/20});
-	// 	 $('#box2-content').css({ 'opacity' : (1 - (windowScroll / 700)) });
-	// } else 
-
-	var box2Offset = $('#box2-content').offset().top;
-  	// console.log(box2Offset)
-
-	if (windowScroll > 950) {
-		 $('#box2-content').css({ 'opacity' : 1 - ((windowScroll - 950) / 100)});
-	} else if (windowScroll < 650) {
+	// Content - Div 2
+	if (windowScroll > 1050) {
+		 $('#box2-content').css({ 'opacity' : 1 - ((windowScroll - 950) / 200)});
+	} else if (windowScroll < 750) {
 		$('#box2-content').css({ 'opacity' : ((windowScroll - 450) / 200)});
 	} else {
 		$('#box2-content').css({ 'opacity' : 1});
+	}
+
+	// Content - Div 3
+	if (windowScroll > 1500) {
+		 $('#box3-content').css({ 'opacity' : 1 - ((windowScroll - 1500) / 200)});
+	} else if (windowScroll < 1400) {
+		$('#box3-content').css({ 'opacity' : ((windowScroll - 1200) / 200)});
+	} else {
+		$('#box3-content').css({ 'opacity' : 1});
 	}
 
 
