@@ -10,7 +10,7 @@
 
 
 h1 {
-	padding-top: 10px;
+/*	padding-top: 10px;*/
 	margin-top: 0px;
 }
 
@@ -102,5 +102,15 @@ body {
 	float: top;
 	margin-top: -30%;
 	
+}
+
+#carousel-example-generic {
+	margin-left: 50px;
+	width: 500px;
+}
+
+.left-title {
+	margin-left: 50px;
+	padding-bottom: 10px;
 }
 
