@@ -17,7 +17,7 @@
 		<center>
 			<div class="logo">
 				<!-- <img id="logo-title" src="logo.png"> -->
-				<img id="geo-lace" src="seikaiha_by_kanzume.png">
+				<!-- <img id="geo-lace" src="seikaiha_by_kanzume.png"> -->
 			</div>
 		</center>
 	</header>
@@ -28,10 +28,10 @@
 			<div class="col-md-3 col-md-offset-1">
 				<img id="portrait" src="static/img/round-profile-pic.png">
 			</div>
-			<span class="col-md-5 col-md-offset-1" id="box1-text">
+			<span class="col-md-5 col-md-offset-1" id="box1-content">
 				<center><h2> Allison K Craig</h2></center>
-				<center><h3>Software Engineer</h3></center>
-				<center><p>Allison live in San Francisco where she is a software engineer specializing in Javascript and Python. She was a HackBright Academy Fellow and attends many tech meet-ups in SF. In her spare time she plays ukulele in her band The Not Marys. She studied Fashion Design at FIDM: Fashion Institute of Design and Merchandising and continues to follow her passion for creating through coding.</p></center>
+				<center><h3><i>Software Engineer</i></h3></center>
+				<center><p>Allison lives in San Francisco where she is a software engineer specializing in Javascript and Python. She was a HackBright Academy Fellow and attends many tech meet-ups in SF. In her spare time she plays ukulele in her band The Not Marys. She studied Fashion Design at FIDM: Fashion Institute of Design and Merchandising and continues to follow her passion for creating through coding.</p></center>
 			</span>
 		</div>
 	</div>
@@ -69,7 +69,10 @@
 $(window).scroll(function(){
 
   var windowScroll = $(this).scrollTop();
-  	console.log(windowScroll)
+  	console.log("WINDOW SCROLL: ",windowScroll);
+
+  	// var h = $('#box2-content').offset().top;
+  	// console.log(h)
 
  	// Nameplace - Header
     $('.logo').css({
@@ -87,47 +90,34 @@ $(window).scroll(function(){
 		
 		$('#portrait').css({ 'opacity' : ( 700 - windowScroll) /20 });
 	};
-	// Portrait - Div 1
+	// Content - Div 1
 	if (windowScroll <= 200) {
-		$('#box1-text').css({ 'opacity' : ( 0 + windowScroll )/20});
+		$('#box1-content').css({ 'opacity' : ( 0 + windowScroll )/20});
 	} else if (windowScroll > 400) {
 		
-		$('#box1-text').css({ 'opacity' : ( 700 - windowScroll) / 20 });
+		$('#box1-content').css({ 'opacity' : ( 700 - windowScroll) / 20 });
 	};
 
 
-	if (windowScroll >= 825){
-		$('#box2-title').css({
-      		'transform' : 'translateX(-'+ windowScroll /60 +'%)'
-    	});
-	} 
+	// if (windowScroll <= 600) {
+	// 	// div at bottom of page
+	// 	// $('#box2-content').css({ 'opacity' : ( 0 + windowScroll )/20});
+	// 	 $('#box2-content').css({ 'opacity' : (1 - (windowScroll / 700)) });
+	// } else 
 
-	if (windowScroll >= 850){
-		$('#box2-elem1').css({
-      		'transform' : 'translate('+ windowScroll /60 +'%)'
-    	});
-	}
+	var box2Offset = $('#box2-content').offset().top;
+  	// console.log(box2Offset)
 
-	if (windowScroll >= 875){
-		$('#box2-elem2').css({
-      		'transform' : 'translate(-'+ windowScroll /60 +'%)'
-    	});
-	}
-
-
-	if (windowScroll >= 900){
-		$('#box2-elem3').css({
-      		'transform' : 'translate('+ windowScroll /60 +'%)'
-    	});
-	}
-
-	if (windowScroll >= 925){
-		$('#box2-elem4').css({
-      		'transform' : 'translate(-'+ windowScroll /50 +'%)'
-    	});
+	if (windowScroll > 950) {
+		 $('#box2-content').css({ 'opacity' : 1 - ((windowScroll - 950) / 100)});
+	} else if (windowScroll < 650) {
+		$('#box2-content').css({ 'opacity' : ((windowScroll - 450) / 200)});
+	} else {
+		$('#box2-content').css({ 'opacity' : 1});
 	}
 
 
+	//1050
 });
 
 
