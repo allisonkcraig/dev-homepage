@@ -1,7 +1,7 @@
 .general-div {
 	height: 500px;
 	margin: 0px;
-	padding-top: 50px;
+	padding-top: 25px;
 }
 
 .container-fluid {
@@ -20,6 +20,13 @@ body {
 	font-family: 'Quicksand', sans-serif;
 }
 
+.social-glyphs {
+	padding-top: 15px;
+	height: 50px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+}
 
 
 #fname {
@@ -50,6 +57,10 @@ body {
 #box3 {
 	background-color: #E8F59B;
 
+}
+
+#box3-5 {
+	background-color: #E8F5C7;
 }
 
 
