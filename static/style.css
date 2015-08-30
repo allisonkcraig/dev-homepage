@@ -81,7 +81,7 @@ body {
 }
 
 #box6 {
-	height: 50px;
+	height: 100px;
 	overflow: hidden;
 	background-image: url("/static/img/spoon-vector-graphics-3.jpeg");
 	background-attachment: fixed;
