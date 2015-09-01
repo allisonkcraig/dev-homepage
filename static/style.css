@@ -73,11 +73,14 @@ body {
 	background-image: url("/static/img/spoon-vector-graphics-3.jpeg");
 	background-attachment: fixed;
 	box-shadow: 1px 1px 3px gray;
+	color: white;
+	padding-top: 75px;
 }
 
 #box5 {
 	background-color: #728081;
 	box-shadow: 1px 1px 3px gray;
+	color: white;
 }
 
 #box6 {
