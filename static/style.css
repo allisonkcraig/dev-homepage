@@ -28,6 +28,13 @@ body {
 
 }
 
+hr {
+	width: 500px;
+}
+
+#portrait {
+	padding-top: 25px;
+}
 
 #fname {
 	font-size: 5em;
@@ -88,10 +95,13 @@ body {
 	overflow: hidden;
 	background-image: url("/static/img/spoon-vector-graphics-3.jpeg");
 	background-attachment: fixed;
-	box-shadow: 1px 1px 3px gray;
+/*	box-shadow: 1px 1px 3px gray;*/
 	color: white;
 }
 
+#box6-content {
+	margin-top: 75px;
+}
 
 .header-box {
 	position: relative; /* anchor for paralax*/
