@@ -28,9 +28,6 @@ body {
 
 }
 
-hr {
-	width: 500px;
-}
 
 #portrait {
 	padding-top: 25px;
@@ -72,6 +69,11 @@ hr {
 #box3-5 {
 	background-color: #E8F5C7;
 	box-shadow: 1px 1px 3px gray;
+}
+
+
+#box4-content {
+	color: white;
 }
 
 
@@ -144,3 +146,6 @@ hr {
 	padding-bottom: 10px;
 }
 
+hr {
+	width: 500px;
+}
