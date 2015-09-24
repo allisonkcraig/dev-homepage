@@ -184,26 +184,28 @@
 			<a href="https://www.google.com/fonts" target="_blank">Google Fonts: Fonts</a>
 			<a href="http://glyphicons.com/" target="_blank">Glyphicons: Social Media Icons</a>
 		</div>
-
 	</div>
-
 </div>
-<script type="text/javascript">
-$(window).scroll(function(){
 
-  var windowScroll = $(this).scrollTop();
-  	console.log("WINDOW SCROLL: ",windowScroll);
+<script type="text/javascript">
+var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+if (w > 850) {
+
+	$(window).scroll(function(){
+
+		var windowScroll = $(this).scrollTop();
+		console.log("WINDOW SCROLL: ",windowScroll);
 
   	// var h = $('#box2-content').offset().top;
   	// console.log(h)
 
  	// Nameplace - Header
-    $('#logo').css({
-      'transform' : 'translate(0px, '+ windowScroll /8 +'%)'
-    });
+ 	$('#logo').css({
+ 		'transform' : 'translate(0px, '+ windowScroll /8 +'%)'
+ 	});
     // Overlay - Header
     $('#geo-lace').css({
-      'transform' : 'translate(0px, '+ windowScroll /4 +'%)'
+    	'transform' : 'translate(0px, '+ windowScroll /4 +'%)'
     });
 
 
@@ -218,7 +220,7 @@ $(window).scroll(function(){
 
 	// Content - Div 2
 	if (windowScroll > 1050) {
-		 $('#box2-content').css({ 'opacity' : 1 - ((windowScroll - 950) / 200)});
+		$('#box2-content').css({ 'opacity' : 1 - ((windowScroll - 950) / 200)});
 	} else if (windowScroll < 750) {
 		$('#box2-content').css({ 'opacity' : ((windowScroll - 450) / 200)});
 	} else {
@@ -227,7 +229,7 @@ $(window).scroll(function(){
 
 	// Content - Div 3
 	if (windowScroll > 1500) {
-		 $('#box3-content').css({ 'opacity' : 1 - ((windowScroll - 1500) / 200)});
+		$('#box3-content').css({ 'opacity' : 1 - ((windowScroll - 1500) / 200)});
 	} else if (windowScroll < 1400) {
 		$('#box3-content').css({ 'opacity' : ((windowScroll - 1200) / 200)});
 	} else {
@@ -236,7 +238,7 @@ $(window).scroll(function(){
 
 	// Content - Div 3.5
 	if (windowScroll > 2000) {
-		 $('#box3-5-content').css({ 'opacity' : 1 - ((windowScroll - 2000) / 200)});
+		$('#box3-5-content').css({ 'opacity' : 1 - ((windowScroll - 2000) / 200)});
 	} else if (windowScroll < 1900) {
 		$('#box3-5-content').css({ 'opacity' : ((windowScroll - 1700) / 200)});
 	} else {
@@ -246,7 +248,7 @@ $(window).scroll(function(){
 
 	//1050
 });
-
+}
 
 </script>
 </body>

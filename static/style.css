@@ -1,7 +1,8 @@
 .general-div {
-	height: 500px;
+/*	height: 500px;*/
 	margin: 0px;
-	padding-top: 25px;
+	padding: 5% 0;
+	overflow: auto;
 }
 
 .container-fluid {
@@ -39,12 +40,6 @@ body {
 
 #box1 {
 	background-color: #E5B1B5;
-
-}
-
-
-#box1-content {
-	padding-top: 25px;
 }
 
 #box2 {
@@ -60,22 +55,23 @@ body {
 #box2-content {
 	padding-top: 30px;
 }
+
 #box3 {
 	background-color: #E8F59B;
 	box-shadow: 1px 1px 3px gray;
+	padding-bottom: 5%
 
 }
 
 #box3-5 {
 	background-color: #E8F5C7;
 	box-shadow: 1px 1px 3px gray;
+	padding-bottom: 5%
 }
-
 
 #box4-content {
 	color: white;
 }
-
 
 #box4 {
 	overflow: hidden;
@@ -128,7 +124,6 @@ body {
 	text-shadow: 1px 1px #827376;
 }
 
-
 #geo-lace {
 	width: cover;
 	float: top;
@@ -142,8 +137,8 @@ body {
 }
 
 .left-title {
-	margin-left: 50px;
-	padding-bottom: 10px;
+	margin-left: 3em;
+	padding-bottom: 0.625em;
 }
 
 hr {
