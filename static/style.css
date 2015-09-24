@@ -106,7 +106,7 @@ body {
 	height:500px;
 	background-image: url("/static/img/spoon-graphics-vector.jpeg");
 	background-attachment: fixed;
-	background-size: 100%;
+/*	background-size: 100%;*/
 	background-position; 
 	overflow: hidden;
 	box-shadow: 1px 1px 3px gray;
