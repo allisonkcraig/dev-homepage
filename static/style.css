@@ -47,7 +47,6 @@ body {
 	background-image: url("/static/img/spoon-graphics-vector-2.jpeg");
 	background-attachment: fixed;
 	background-size: cover;
-	color: white;
 	text-align: center;
 	box-shadow: 1px 1px 3px gray;
 }
