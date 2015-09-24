@@ -118,10 +118,10 @@ body {
 	margin: 0 auto;
 	text-align: center;
 	width: 100%;
-	font-family: 'Codystar', cursive;
-	text-align: center;
-	padding-top: 150px;
-	text-shadow: 1px 1px #827376;
+	font-family: 'Kaushan Script', sans-serif;
+	font-size: 2em;
+	padding-top: 4em;
+	text-shadow: 0.05em 0.05em #827376;
 }
 
 #geo-lace {
@@ -132,7 +132,7 @@ body {
 }
 
 #carousel-example-generic {
-	margin-left: 50px;
+	margin-left: 3em;
 	width: 500px;
 }
 
